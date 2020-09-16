@@ -1,0 +1,20 @@
+export const tasks = [
+    {"id" : "dispatch-event",
+    "title" : "Dispatch Event",
+    "description" :"" },
+    {"id" : "event-handling",
+        "title" : "Handle Event",
+        "description" : "Receive event from dispatch and change app state"},
+    {"id" : "effect-handler",
+        "title" : "Effect Handler",
+        "description" : "Receive app state change from even handler and update state"},
+    {"id" : "query-function",
+        "title" : "Query Function",
+        "description" : "Retrieve any changes in state and update subscriptions"},
+    {"id" : "update-view",
+        "title" : "Update View",
+        "description" : "Take subscriptions updates and update components accordingly"},
+    {"id" : "update-dom",
+        "title" : "Update DOM",
+        "description" : "Take updated views and finish updates in the DOM"}
+]

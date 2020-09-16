@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './Header';
+import ChecklistItems from './ChecklistItems';
 import './App.css';
+import {tasks} from './tasks'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const reframe = require('./reframe_logo.png')
+
+const App = () => {
+    return(
+        <div>
+            <img src={reframe} height="100px" alt="reframe logo"/>
+            <div style={mainBodyStyle}>
+                <Header />
+                <ChecklistItems />
+            </div>
+        </div>
+    )
+};
+
+const mainBodyStyle = {
+    display : "flex",
+    flexDirection : "column",
+    justifyContent: "center",
+    aligmItems: "center"
 }
 
 export default App;

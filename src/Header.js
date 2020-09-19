@@ -8,8 +8,9 @@ const Header = () => {
 
 const headerStyle = {
     textAlign : "center",
-    fontSize : "60px",
-    marginTop : "-10px"
+    fontSize : "42px",
+    marginTop : "15px",
+    color:"#545454",
 }
 
 export default Header;
